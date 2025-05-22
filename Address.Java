@@ -1,4 +1,4 @@
-package com.ComponentMapping.ComponentMappingExample.entities;
+//package com.ComponentMapping.ComponentMappingExample.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
@@ -10,7 +10,7 @@ public class Address {
     private String streetAddress;
     private String city;
     private String state;
-
+    
     @Column(name="zipcode")
     private String zipCode;
     private String country;
@@ -53,5 +53,9 @@ public class Address {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+    public static void main(String[] args)
+    {
+        System.out.println("Hello");
     }
 }
